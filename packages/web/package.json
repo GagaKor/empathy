@@ -7,6 +7,7 @@
     "build": "svelte-kit sync && vite build",
     "preview": "vite preview",
     "lint": "eslint src --ext .ts,.svelte",
+    "pretest": "pnpm --filter @empathy/shared build",
     "test": "vitest run"
   },
   "dependencies": {
