@@ -7,10 +7,13 @@
     "node": ">=22"
   },
   "scripts": {
-    "build": "pnpm -r build",
-    "test": "pnpm --filter @empathy/shared build && pnpm -r test",
-    "lint": "pnpm -r lint",
-    "format": "prettier -w ."
+    "build": "pnpm -r --filter \"@empathy/*\" --if-present run build",
+    "test": "pnpm -r --if-present run test",
+    "lint": "pnpm -r --if-present run lint",
+    "format": "prettier -w .",
+    "backend": "pnpm --filter @empathy/api run start:dev",
+    "front": "pnpm --filter @empathy/web run dev",
+    "dev": "pnpm -r --parallel --stream --filter @empathy/web --filter @empathy/api run dev"
   },
   "devDependencies": {
     "eslint": "^8.57.0",
@@ -20,8 +23,10 @@
     "lint-staged": "^15.2.0",
     "typescript": "^5.4.2",
     "@typescript-eslint/parser": "^6.21.0",
-    "@typescript-eslint/eslint-plugin": "^6.21.0"
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "ts-node": "^10.9.2"
   },
+  "workspaces": ["packages/*"],
   "lint-staged": {
     "*.{ts,tsx,js,jsx,svelte}": [
       "eslint --fix",
