@@ -1,8 +1,0 @@
-{
-  "name": "Empathy Chat",
-  "short_name": "Empathy",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "icons": []
-}
