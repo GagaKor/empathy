@@ -9,7 +9,9 @@ services:
     ports:
       - '5432:5432'
   api:
-    build: ../packages/api
+    build:
+      context: ..
+      dockerfile: packages/api/Dockerfile
     ports:
       - '3000:3000'
     env_file:
