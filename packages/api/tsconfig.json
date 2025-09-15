@@ -3,11 +3,14 @@
   "compilerOptions": {
     "outDir": "dist",
     "rootDir": "src",
-    "module": "ES2022",
+    "module": "CommonJS",
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
   "include": ["src"],
-  "exclude": ["dist", "test"]
+  "exclude": ["dist", "test"],
+  "paths": {
+    "@empathy/shared": ["../shared/src/index.ts"]
+  }
 }
