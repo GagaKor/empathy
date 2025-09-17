@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title>Empathy</title>
+  <desc>Stylized heart icon</desc>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+  </defs>
+  <path fill="url(#g)" d="M32 56s-4.6-4.2-9.4-8.7C16.7 42 12 37.6 12 30.6 12 23.3 17.2 18 24 18c3.5 0 6.6 1.6 8 4 1.4-2.4 4.5-4 8-4 6.8 0 12 5.3 12 12.6 0 7-4.7 11.4-10.6 16.7C36.6 51.8 32 56 32 56z"/>
+</svg>
